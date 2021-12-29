@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/vendors/billboard.min.css">
+  <title>ESM Checker</title>
+</head>
+<body>
+  <h1>ES Module Checker Visualizations</h1>
+  <p>This will show the last month of stats on how ES Module adoption is progressing on a day-to-day basis.</p>
+  <div id="esm-chart">JS is required</div>
+
+  <h2>Legend</h2>
+  <ul>
+    <li>type_module: A module that explicitly set the type for the package to "module" which will treat all .js files as ESM by default.</li>
+    <li>exports_require: A module that has an "exports" field that explicitly has a "require" field which allows a module to be required with a CJS fallback.</li>
+    <li>exports_no_require: A module that has an "exports" field that does not have a "require" field, so it may not have a CJS fallback.</li>
+  </ul>
+
+  <p style="text-align: center;">
+    A project by <a href="https://lannonbr.com">Benjamin Lannon</a> | <a href="https://github.com/lannonbr/esm-checker-site">Website Source</a> | <a href="https://github.com/lannonbr/esm-checker">Data Collection Source</a>
+  </p>
+
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="/vendors/billboard.min.js"></script>
+  <script src="https://unpkg.com/dayjs@1.10.7/dayjs.min.js"></script>
+  <script src="/data.js"></script>
+  <script src="/main.js"></script>
+</body>
+</html>

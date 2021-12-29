@@ -1,0 +1,31 @@
+on:
+  schedule:
+    - cron: "10 0 * * *" # Every day at 12:10AM UTC
+  workflow_dispatch:
+permissions:
+  id-token: write
+  contents: write
+name: Refresh Data
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-region: ${{ secrets.AWS_REGION }}
+          role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
+          role-session-name: ESMCheckerSiteSession
+          role-duration-seconds: 900
+      - run: npm install
+      - run: node grabData.js > site/data.js
+        env:
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+          TABLE_NAME: ${{ secrets.TABLE_NAME }}
+      - run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+      - run: |
+          git add site/data.js
+          git commit -m "Updated data.js"
+          git push origin main
