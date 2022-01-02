@@ -21,7 +21,8 @@ jobs:
       - run: node grabData.js > site/data.js
         env:
           AWS_REGION: ${{ secrets.AWS_REGION }}
-          TABLE_NAME: ${{ secrets.TABLE_NAME }}
+          STATS_TABLE_NAME: ${{ secrets.STATS_TABLE_NAME }}
+          AUDIT_TABLE_NAME: ${{ secrets.AUDIT_TABLE_NAME }}
       - run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"

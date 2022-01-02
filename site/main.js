@@ -6,7 +6,7 @@ let exports_no_require_arr = [];
 let type_module_arr = [];
 
 for (const entry of entries) {
-  timesArr.push(entry.timestamp);
+  timesArr.push(dayjs(entry.timestamp).valueOf());
   exports_require_arr.push(entry.exports_require);
   exports_no_require_arr.push(entry.exports_no_require);
   type_module_arr.push(entry.type_module);
