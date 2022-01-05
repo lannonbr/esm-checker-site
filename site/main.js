@@ -49,3 +49,28 @@ var chart = bb.generate({
     left: 50,
   },
 });
+
+document.getElementById("audits").innerHTML = `
+  <h2>Events</h2>
+  <p>This is a collection of events of node modules enabling possible ESM features over the past 7 days.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Package</th>
+        <th>timestamp</th>
+        <th>changed field</th>
+    </thead>
+    <tbody>
+  ${window.auditsData
+    .map((e) => {
+      return `<tr>
+      <td>${e.package_name}</td>
+      <td>${e.timestamp}</td>
+      <td>${
+        e.change + " " + (e.new_value === true ? "enabled" : "disabled")
+      }</td>  
+    </tr>`;
+    })
+    .join("")}
+  </table>
+`;
