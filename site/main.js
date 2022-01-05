@@ -64,7 +64,9 @@ document.getElementById("audits").innerHTML = `
   ${window.auditsData
     .map((e) => {
       return `<tr>
-      <td>${e.package_name}</td>
+      <td><a href="https://npmjs.com/package/${e.package_name}">${
+        e.package_name
+      }</a></td>
       <td>${e.timestamp}</td>
       <td>${
         e.change + " " + (e.new_value === true ? "enabled" : "disabled")
