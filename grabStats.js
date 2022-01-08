@@ -50,29 +50,7 @@ async function run() {
     return dur.asWeeks() > 0;
   });
 
-  console.log(`window.esmData = ${JSON.stringify(items)}`);
-
-  let today = dayjs();
-
-  let audits = [];
-  for (let i = 7; i >= -1; i--) {
-    let day = today.subtract(i, "day");
-    let auditsResp = await documentClient
-      .query({
-        TableName: process.env["AUDIT_TABLE_NAME"],
-        KeyConditionExpression: "#time = :timestamp",
-        ExpressionAttributeNames: {
-          "#time": "timestamp",
-        },
-        ExpressionAttributeValues: {
-          ":timestamp": day.format("YYYY-MM-DD"),
-        },
-      })
-      .promise();
-    audits.push(...auditsResp.Items);
-  }
-
-  console.log(`window.auditsData = ${JSON.stringify(audits)}`);
+  console.log(JSON.stringify(items));
 }
 
 run();

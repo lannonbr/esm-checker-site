@@ -18,15 +18,19 @@ jobs:
           role-session-name: ESMCheckerSiteSession
           role-duration-seconds: 900
       - run: npm install
-      - run: node grabData.js > site/data.js
+      - run: node grabStats.js > src/_data/stats.json
         env:
           AWS_REGION: ${{ secrets.AWS_REGION }}
           STATS_TABLE_NAME: ${{ secrets.STATS_TABLE_NAME }}
+      - run: node grabAudits.js > src/_data/audits.json
+        env:
+          AWS_REGION: ${{ secrets.AWS_REGION }}
           AUDIT_TABLE_NAME: ${{ secrets.AUDIT_TABLE_NAME }}
       - run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
       - run: |
-          git add site/data.js
-          git commit -m "Updated data.js"
+          git add src/_data/audit.json
+          git add src/_data/stats.json
+          git commit -m "Updated data"
           git push origin main
