@@ -30,7 +30,6 @@ jobs:
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
       - run: |
-          git add src/_data/audit.json
-          git add src/_data/stats.json
+          git add src/_data/
           git commit -m "Updated data"
           git push origin main
