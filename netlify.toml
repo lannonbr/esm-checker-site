@@ -6,4 +6,4 @@ force = true
 _generated_by_eleventy_serverless = "packages"
 
 [functions]
-  included_files = ["netlify/functions/packages/**"]
+  included_files = ["packages/**"]
