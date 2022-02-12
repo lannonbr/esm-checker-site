@@ -4,3 +4,6 @@ to = "/.netlify/functions/packages"
 status = 200
 force = true
 _generated_by_eleventy_serverless = "packages"
+
+[functions]
+  included_files = ["netlify/functions/packages/**"]
