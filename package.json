@@ -12,8 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^1.0.0",
-    "aws-sdk": "^2.1048.0",
+    "aws-sdk": "^2.1073.0",
     "dayjs": "^1.10.7",
-    "dotenv": "^10.0.0"
+    "dotenv": "^16.0.0"
   }
 }
