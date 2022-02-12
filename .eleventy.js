@@ -1,3 +1,5 @@
+const { EleventyServerlessBundlerPlugin } = require("@11ty/eleventy");
+
 module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/scripts");
@@ -12,6 +14,11 @@ window.data = ${JSON.stringify(data)};
 </script>
 <script src="/scripts/chart.js"></script>
 `;
+  });
+  eleventyConfig.addPlugin(EleventyServerlessBundlerPlugin, {
+    name: "packages",
+    functionsDir: "./netlify/functions",
+    redirects: "netlify-toml",
   });
 
   return {
