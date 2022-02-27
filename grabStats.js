@@ -50,7 +50,16 @@ async function run() {
     return dur.asWeeks() > 0;
   });
 
-  console.log(JSON.stringify(items));
+  console.log(
+    JSON.stringify(
+      {
+        monthStats: items,
+        dayStats: items[items.length - 1],
+      },
+      null,
+      2
+    )
+  );
 }
 
 run();

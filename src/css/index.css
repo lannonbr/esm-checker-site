@@ -8,6 +8,12 @@ body {
   line-height: 1.5;
 }
 
+.latest-text {
+  font-weight: bold;
+  font-size: 24px;
+  display: inline-block;
+}
+
 #audits {
   margin: 0 auto;
   border-collapse: collapse;

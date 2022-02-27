@@ -7,7 +7,28 @@ title: ESM Checker - Home
 
 This will show the last month of stats on how ES Module adoption is progressing on a day-to-day basis. This keeps track of approximately 2000 popular NPM packages which can be seen [here](https://github.com/lannonbr/esm-checker/blob/main/packages.txt).
 
-{% statsGraph stats %}
+{% statsGraph stats.monthStats %}
+
+## Latest
+
+<div style="display: flex; gap: 25px; text-align: center; justify-content: center;">
+  <section>
+    <span class="latest-text">{{stats.dayStats.timestamp}}</span><br>
+    Date
+  </section>
+  <section>
+    <span class="latest-text">{{stats.dayStats.exports_require}}</span><br>
+    Exports Require
+  </section>
+  <section>
+    <span class="latest-text">{{stats.dayStats.exports_no_require}}</span><br>
+    Exports No Require
+  </section>
+  <section>
+    <span class="latest-text">{{stats.dayStats.type_module}}</span><br>
+    Type Module
+  </section>
+</div>
 
 ## Legend
 
