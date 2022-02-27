@@ -48,7 +48,7 @@ This is a collection of events of node modules enabling possible ESM features ov
     <tbody>
   {% for audit in audits %}
 <tr>
-  <td><a href="https://npmjs.com/package/{{ audit.package_name }}">{{ audit.package_name }}</a></td>
+  <td><a href="/packages/{{ audit.package_name | persistSlash }}">{{ audit.package_name }}</a></td>
   <td>{{ audit.timestamp }}</td>
   <td>{{ audit.change }} {% if audit.new_value == true %}enabled {% else %}disabled{% endif -%}</td>
 </tr>
