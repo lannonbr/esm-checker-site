@@ -5,6 +5,3 @@ status = 200
 force = true
 _generated_by_eleventy_serverless = "packages"
 
-[functions]
-node_bundler = "esbuild"
-external_node_modules = ["@11ty/eleventy", "@11ty/dependency-tree", "pug-filters", "dayjs", "@aws-sdk/client-dynamodb"]
