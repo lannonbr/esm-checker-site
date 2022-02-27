@@ -18,6 +18,9 @@ window.data = ${JSON.stringify(data)};
 <script src="/scripts/chart.js"></script>
 `;
   });
+  eleventyConfig.addFilter("persistSlash", (value) => {
+    return value.replace(/\//, "%2F");
+  });
   eleventyConfig.addPlugin(EleventyServerlessBundlerPlugin, {
     name: "packages",
     functionsDir: "./netlify/functions",

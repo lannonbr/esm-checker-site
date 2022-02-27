@@ -6,9 +6,7 @@ eleventyComputed:
   title: "Package {{ eleventy.serverless.path.package }} - ESM Checker"
 ---
 
-# Package: {{ eleventy.serverless.path.package }}
-
-<a href="/">Back to Home</a>
+## Package: {{ eleventy.serverless.path.package }}
 
 ## Details
 

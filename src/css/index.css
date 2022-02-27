@@ -8,6 +8,16 @@ body {
   line-height: 1.5;
 }
 
+nav ul {
+  display: flex;
+  gap: 20px;
+  padding-left: 0;
+}
+
+nav ul li {
+  list-style: none;
+}
+
 .latest-text {
   font-weight: bold;
   font-size: 24px;
