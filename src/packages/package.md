@@ -2,6 +2,8 @@
 layout: main.html
 permalink:
   packages: "/packages/:package"
+eleventyComputed:
+  title: "Package {{ eleventy.serverless.path.package }} - ESM Checker"
 ---
 
 # Package: {{ eleventy.serverless.path.package }}
