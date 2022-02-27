@@ -2,6 +2,7 @@ const { EleventyServerlessBundlerPlugin } = require("@11ty/eleventy");
 
 require("dayjs");
 require("@aws-sdk/client-dynamodb");
+require("@aws-sdk/lib-dynamodb");
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("src/css");

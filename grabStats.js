@@ -1,42 +1,41 @@
 require("dotenv").config();
-const aws = require("aws-sdk");
+const { DynamoDBClient } = require("@aws-sdk/client-dynamodb");
+const {
+  DynamoDBDocumentClient,
+  QueryCommand,
+} = require("@aws-sdk/lib-dynamodb");
 const dayjs = require("dayjs");
 var duration = require("dayjs/plugin/duration");
 dayjs.extend(duration);
-
-aws.config.update({
-  region: process.env["AWS_REGION"],
-});
 
 let this_month = dayjs().format("YYYY-MM");
 let last_month = dayjs().subtract(1, "month").format("YYYY-MM");
 
 async function run() {
-  const documentClient = new aws.DynamoDB.DocumentClient({
-    apiVersion: "2012-08-10",
-  });
+  const ddbClient = new DynamoDBClient();
+  const docClient = DynamoDBDocumentClient.from(ddbClient);
 
-  let last_month_entries_result = await documentClient
-    .query({
+  let last_month_entries_result = await docClient.send(
+    new QueryCommand({
       TableName: process.env["STATS_TABLE_NAME"],
       KeyConditionExpression: "year_month = :ym",
       ExpressionAttributeValues: {
         ":ym": last_month,
       },
     })
-    .promise();
+  );
 
   let items = last_month_entries_result.Items;
 
-  let this_month_entries_result = await documentClient
-    .query({
+  let this_month_entries_result = await docClient.send(
+    new QueryCommand({
       TableName: process.env["STATS_TABLE_NAME"],
       KeyConditionExpression: "year_month = :ym",
       ExpressionAttributeValues: {
         ":ym": this_month,
       },
     })
-    .promise();
+  );
 
   items.push(...this_month_entries_result.Items);
 
