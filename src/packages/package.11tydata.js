@@ -20,7 +20,7 @@ module.exports = {
       if (package.length == 0) {
         return {};
       }
-      let resp = await ddbClient.send(
+      let packageTableResponse = await ddbClient.send(
         new QueryCommand({
           TableName: process.env.DYNAMO_PACKAGE_TABLE_NAME,
           KeyConditionExpression: "package_name = :pn",
@@ -30,12 +30,31 @@ module.exports = {
         })
       );
 
-      console.log(JSON.stringify({ items: resp.Items }, null, 2));
+      let auditTableResponse = await ddbClient.send(
+        new QueryCommand({
+          TableName: process.env.DYNAMO_AUDIT_TABLE_NAME,
+          IndexName: "packageIndex",
+          KeyConditionExpression: "package_name = :pn",
+          ExpressionAttributeValues: {
+            ":pn": { S: package },
+          },
+        })
+      );
 
       let result = {
-        type_module: resp.Items[0]["type_module"].BOOL,
-        exports_require: resp.Items[0]["exports_require"].BOOL,
-        exports_no_require: resp.Items[0]["exports_no_require"].BOOL,
+        type_module: packageTableResponse.Items[0]["type_module"].BOOL,
+        exports_require: packageTableResponse.Items[0]["exports_require"].BOOL,
+        exports_no_require:
+          packageTableResponse.Items[0]["exports_no_require"].BOOL,
+        audits: auditTableResponse.Items.map((item) => ({
+          old_value: item["old_value"].BOOL,
+          new_value: item["new_value"].BOOL,
+          timestamp: item["timestamp"].S,
+          package_name: item["package_name"].S,
+          change: item["change"].S,
+          pacakge_name_id: item["package_name_id"].S,
+        })),
+        auditsLen: auditTableResponse.Items.length,
       };
 
       return result;
