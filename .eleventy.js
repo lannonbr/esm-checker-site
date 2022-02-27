@@ -18,7 +18,7 @@ window.data = ${JSON.stringify(data)};
   eleventyConfig.addPlugin(EleventyServerlessBundlerPlugin, {
     name: "packages",
     functionsDir: "./netlify/functions",
-    redirects: "netlify-toml",
+    redirects: "netlify-toml-builders",
   });
 
   return {

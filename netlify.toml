@@ -1,9 +1,6 @@
 [[redirects]]
 from = "/packages/:package"
-to = "/.netlify/functions/packages"
+to = "/.netlify/builders/packages"
 status = 200
 force = true
 _generated_by_eleventy_serverless = "packages"
-
-[functions]
-  included_files = ["packages/**"]
