@@ -3,7 +3,7 @@ layout: main.html
 title: ESM Checker - Home
 ---
 
-This will show the last month of stats on how ES Module adoption is progressing on a day-to-day basis. This keeps track of approximately 2000 popular NPM packages which can be seen [here](https://github.com/lannonbr/esm-checker/blob/main/packages.txt).
+This will show the last month of stats on how ES Module adoption is progressing on a day-to-day basis. This keeps track of approximately 2000 popular NPM packages which can be explored in the [Package Listing](/package-listing/) page on this site.
 
 {% statsGraph stats.monthStats %}
 
