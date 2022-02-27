@@ -25,14 +25,12 @@ Exports require: {{ dynamoData.exports_require }}
 <table id="audits">
     <thead>
       <tr>
-        <th>Package</th>
         <th>timestamp</th>
         <th>changed field</th>
     </thead>
     <tbody>
   {% for audit in dynamoData.audits %}
 <tr>
-  <td><a href="https://npmjs.com/package/{{ audit.package_name }}">{{ audit.package_name }}</a></td>
   <td>{{ audit.timestamp }}</td>
   <td>{{ audit.change }} {% if audit.new_value == true %}enabled {% else %}disabled{% endif -%}</td>
 </tr>
