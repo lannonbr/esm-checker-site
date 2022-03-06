@@ -1,62 +1,6 @@
 {
   "monthStats": [
     {
-      "timestamp": "2022-01-31",
-      "total_packages": 2114,
-      "exports_require": 77,
-      "year_month": "2022-01",
-      "type_module": 207,
-      "exports_no_require": 274
-    },
-    {
-      "timestamp": "2022-02-01",
-      "total_packages": 2114,
-      "exports_require": 77,
-      "year_month": "2022-02",
-      "type_module": 207,
-      "exports_no_require": 274
-    },
-    {
-      "timestamp": "2022-02-02",
-      "total_packages": 2114,
-      "exports_require": 77,
-      "year_month": "2022-02",
-      "type_module": 207,
-      "exports_no_require": 274
-    },
-    {
-      "timestamp": "2022-02-03",
-      "total_packages": 2114,
-      "exports_require": 77,
-      "year_month": "2022-02",
-      "type_module": 207,
-      "exports_no_require": 274
-    },
-    {
-      "timestamp": "2022-02-04",
-      "total_packages": 2114,
-      "exports_require": 77,
-      "year_month": "2022-02",
-      "type_module": 207,
-      "exports_no_require": 274
-    },
-    {
-      "timestamp": "2022-02-05",
-      "total_packages": 2114,
-      "exports_require": 78,
-      "year_month": "2022-02",
-      "type_module": 207,
-      "exports_no_require": 274
-    },
-    {
-      "timestamp": "2022-02-06",
-      "total_packages": 2114,
-      "exports_require": 92,
-      "year_month": "2022-02",
-      "type_module": 207,
-      "exports_no_require": 274
-    },
-    {
       "timestamp": "2022-02-07",
       "total_packages": 2114,
       "exports_require": 92,
@@ -223,13 +167,69 @@
       "year_month": "2022-02",
       "type_module": 208,
       "exports_no_require": 276
+    },
+    {
+      "timestamp": "2022-02-28",
+      "total_packages": 2114,
+      "exports_require": 93,
+      "year_month": "2022-02",
+      "type_module": 208,
+      "exports_no_require": 276
+    },
+    {
+      "timestamp": "2022-03-01",
+      "total_packages": 2114,
+      "exports_require": 93,
+      "year_month": "2022-03",
+      "type_module": 208,
+      "exports_no_require": 276
+    },
+    {
+      "timestamp": "2022-03-02",
+      "total_packages": 2114,
+      "exports_require": 93,
+      "year_month": "2022-03",
+      "type_module": 208,
+      "exports_no_require": 276
+    },
+    {
+      "timestamp": "2022-03-03",
+      "total_packages": 2114,
+      "exports_require": 93,
+      "year_month": "2022-03",
+      "type_module": 208,
+      "exports_no_require": 276
+    },
+    {
+      "timestamp": "2022-03-04",
+      "total_packages": 2114,
+      "exports_require": 94,
+      "year_month": "2022-03",
+      "type_module": 208,
+      "exports_no_require": 276
+    },
+    {
+      "timestamp": "2022-03-05",
+      "total_packages": 2114,
+      "exports_require": 94,
+      "year_month": "2022-03",
+      "type_module": 208,
+      "exports_no_require": 276
+    },
+    {
+      "timestamp": "2022-03-06",
+      "total_packages": 2114,
+      "exports_require": 94,
+      "year_month": "2022-03",
+      "type_module": 208,
+      "exports_no_require": 276
     }
   ],
   "dayStats": {
-    "timestamp": "2022-02-27",
+    "timestamp": "2022-03-06",
     "total_packages": 2114,
-    "exports_require": 93,
-    "year_month": "2022-02",
+    "exports_require": 94,
+    "year_month": "2022-03",
     "type_module": 208,
     "exports_no_require": 276
   }
