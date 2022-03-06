@@ -6,19 +6,30 @@ eleventyComputed:
   title: "Package {{ eleventy.serverless.path.package }} - ESM Checker"
 ---
 
-## Package: {{ eleventy.serverless.path.package }}
+<h2>Package: {{ eleventy.serverless.path.package }}</h2>
 
-## Details
+<h2>Details</h2>
 
 <a href="{{ npmUrl }}">npm page</a>
 
-Type Module: {{ dynamoData.type_module }}
+<table id="package-page-table">
+  <thead>
+    <tr>
+      <th>Type Module</th>
+      <th>Exports no require</th>
+      <th>Exports require</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="field-{{ dynamoData.type_module }}">{{ dynamoData.type_module }}</td>
+      <td class="field-{{ dynamoData.exports_no_require }}">{{ dynamoData.exports_no_require }}</td>
+      <td class="field-{{ dynamoData.exports_require }}">{{ dynamoData.exports_require }}</td>
+    </tr>
+  </tbody>
+</table>
 
-Exports no require: {{ dynamoData.exports_no_require }}
-
-Exports require: {{ dynamoData.exports_require }}
-
-## Audits
+<h2>Audits</h2>
 
 {% if dynamoData.auditsLen > 0 %}
 
@@ -41,4 +52,4 @@ Exports require: {{ dynamoData.exports_require }}
 <p>There are currently no recorded audits at the time for this package</p>
 {% endif %}
 
-Built on: {{ builtDate }}
+<p>Built on: {{ builtDate }}</p>
