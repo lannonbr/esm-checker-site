@@ -10,6 +10,10 @@ eleventyComputed:
 
 <h2>Details</h2>
 
+{% if dynamoData.description %}
+<p>{{ dynamoData.description }}</p>
+{% endif %}
+
 <a href="{{ npmUrl }}">npm page</a>
 
 <table id="package-page-table">
