@@ -29,10 +29,21 @@ nav ul li {
   border-collapse: collapse;
 }
 
+#audits.package-audits {
+  margin: 0;
+}
+
 #audits th,
 #audits td {
   border: 1px solid black;
   padding: 10px;
+}
+
+svg#npm {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 #package-page-table {
