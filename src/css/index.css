@@ -27,6 +27,7 @@ nav ul li {
 #audits {
   margin: 0 auto;
   border-collapse: collapse;
+  width: 100%;
 }
 
 #audits.package-audits {
@@ -35,8 +36,16 @@ nav ul li {
 
 #audits th,
 #audits td {
-  border: 1px solid black;
   padding: 12px;
+}
+
+#audits th {
+  text-align: left;
+  border-bottom: 1px solid black;
+}
+
+#audits tbody tr:not(:last-of-type) {
+  border-bottom: 1px solid grey;
 }
 
 svg#npm {
@@ -50,6 +59,8 @@ svg#npm {
   border: 1px solid black;
   border-collapse: collapse;
   margin: 30px 0;
+  width: 100%;
+  text-align: left;
 }
 
 #package-page-table th,
@@ -57,10 +68,6 @@ svg#npm {
   border: 1px solid black;
   font-weight: bold;
   padding: 12px;
-}
-
-#package-page-table td {
-  text-align: center;
 }
 
 #package-page-table .field-true {
