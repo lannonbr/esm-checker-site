@@ -36,6 +36,8 @@ This will show the last month of stats on how ES Module adoption is progressing 
 
 ## Events
 
+{% if audits.auditsLen > 0 %}
+
 This is a collection of events of node modules enabling possible ESM features over the past 7 days.
 
 <table id="audits">
@@ -55,3 +57,9 @@ This is a collection of events of node modules enabling possible ESM features ov
   {% endfor %}
   </tbody>
 </table>
+
+{% else %}
+
+No changes have happened in the last 7 days.
+
+{% endif %}

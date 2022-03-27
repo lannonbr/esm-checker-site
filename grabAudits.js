@@ -33,7 +33,7 @@ async function run() {
     audits.push(...auditsResp.Items);
   }
 
-  console.log(JSON.stringify(audits));
+  console.log(JSON.stringify({ audits: audits, auditsLen: audits.length }));
 }
 
 run();
