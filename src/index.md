@@ -48,7 +48,7 @@ This is a collection of events of node modules enabling possible ESM features ov
         <th>changed field</th>
     </thead>
     <tbody>
-  {% for audit in audits %}
+  {% for audit in audits.audits %}
 <tr>
   <td><a href="/packages/{{ audit.package_name | persistSlash }}">{{ audit.package_name }}</a></td>
   <td>{{ audit.timestamp }}</td>
