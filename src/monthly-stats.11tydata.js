@@ -43,8 +43,6 @@ module.exports = {
         dateObj = dateObj.add(1, "month");
       }
 
-      console.log(data);
-
       return data.reverse();
     },
   },
