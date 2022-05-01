@@ -29,7 +29,7 @@ module.exports = {
         // Grab the first item out of each primary key shard which should be the data from the first of each month
         let entriesResult = await docClient.send(
           new QueryCommand({
-            TableName: process.env["STATS_TABLE_NAME"],
+            TableName: process.env["DYNAMO_STATS_TABLE_NAME"],
             KeyConditionExpression: "year_month = :ym",
             ExpressionAttributeValues: {
               ":ym": dateObj.format("YYYY-MM"),
