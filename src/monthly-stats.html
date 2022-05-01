@@ -1,0 +1,41 @@
+---
+layout: main.html
+title: ESM Checker - Monthly Stats
+---
+
+<h1>Monthly Stats</h1>
+
+<p>
+  The following is the state of the various datapoints being collected on the
+  first of each month since I've been running this project.
+</p>
+
+{% for month in monthlyStats %}
+<div
+  style="
+    display: flex;
+    gap: 25px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 32px;
+  "
+>
+  <section>
+    <span class="latest-text">{{month.timestamp}}</span><br />
+    Date
+  </section>
+  <section>
+    <span class="latest-text">{{month.exports_require}}</span><br />
+    Exports Require
+  </section>
+  <section>
+    <span class="latest-text">{{month.exports_no_require}}</span><br />
+    Exports No Require
+  </section>
+  <section>
+    <span class="latest-text">{{month.type_module}}</span><br />
+    Type Module
+  </section>
+</div>
+
+{% endfor %}
