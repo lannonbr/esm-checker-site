@@ -12,11 +12,11 @@
   "author": "Benjamin Lannon <benjamin@lannonbr.com>",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^1.0.0",
-    "@aws-sdk/client-dynamodb": "^3.54.0",
-    "@aws-sdk/lib-dynamodb": "^3.54.0",
+    "@11ty/eleventy": "^1.0.1",
+    "@aws-sdk/client-dynamodb": "^3.81.0",
+    "@aws-sdk/lib-dynamodb": "^3.81.0",
     "@netlify/functions": "^1.0.0",
-    "dayjs": "^1.10.8",
+    "dayjs": "^1.11.1",
     "dotenv": "^16.0.0"
   }
 }
