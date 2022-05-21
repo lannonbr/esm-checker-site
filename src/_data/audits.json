@@ -1,1 +1,1 @@
-{"audits":[],"auditsLen":0}
+{"audits":[{"old_value":false,"new_value":true,"timestamp":"2022-05-21","package_name":"cheerio","change":"exports_require","package_name_id":"cheerio665a1d2164ec4c9eb8e321067bae1b18"}],"auditsLen":1}
