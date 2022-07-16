@@ -1,1 +1,1 @@
-{"audits":[{"old_value":false,"new_value":true,"timestamp":"2022-07-08","package_name":"duplexer3","change":"type_module","package_name_id":"duplexer34aa1e3b0e9a44b6d8ba3065a18f0d98a"},{"old_value":false,"new_value":true,"timestamp":"2022-07-08","package_name":"duplexer3","change":"exports_no_require","package_name_id":"duplexer3c084ce9b58ef460da37c08e586609c5e"}],"auditsLen":2}
+{"audits":[],"auditsLen":0}
