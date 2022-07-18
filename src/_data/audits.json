@@ -1,1 +1,1 @@
-{"audits":[],"auditsLen":0}
+{"audits":[{"old_value":false,"new_value":true,"timestamp":"2022-07-18","package_name":"clone-response","change":"exports_no_require","package_name_id":"clone-response9772f4eabd8741d8b0a33fe6e3975522"},{"old_value":false,"new_value":true,"timestamp":"2022-07-18","package_name":"clone-response","change":"type_module","package_name_id":"clone-responsef948789056a64bfcbb3be59dcf93a29d"}],"auditsLen":2}
