@@ -1,14 +1,6 @@
 {
   "monthStats": [
     {
-      "timestamp": "2022-07-12",
-      "total_packages": 2114,
-      "exports_require": 115,
-      "year_month": "2022-07",
-      "type_module": 220,
-      "exports_no_require": 287
-    },
-    {
       "timestamp": "2022-07-13",
       "total_packages": 2114,
       "exports_require": 115,
@@ -223,12 +215,20 @@
       "year_month": "2022-08",
       "type_module": 223,
       "exports_no_require": 293
+    },
+    {
+      "timestamp": "2022-08-09",
+      "total_packages": 2114,
+      "exports_require": 116,
+      "year_month": "2022-08",
+      "type_module": 223,
+      "exports_no_require": 293
     }
   ],
   "dayStats": {
-    "timestamp": "2022-08-08",
-    "total_packages": 2113,
-    "exports_require": 115,
+    "timestamp": "2022-08-09",
+    "total_packages": 2114,
+    "exports_require": 116,
     "year_month": "2022-08",
     "type_module": 223,
     "exports_no_require": 293
