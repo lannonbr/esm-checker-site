@@ -1,1 +1,1 @@
-{"audits":[{"old_value":false,"new_value":true,"timestamp":"2022-09-07","package_name":"emittery","change":"exports_no_require","package_name_id":"emittery5b14182a96634c0585a652dd26eec2c8"},{"old_value":false,"new_value":true,"timestamp":"2022-09-07","package_name":"emittery","change":"type_module","package_name_id":"emittery8630be7cef9646ef8134c313c403c48a"}],"auditsLen":2}
+{"audits":[],"auditsLen":0}
