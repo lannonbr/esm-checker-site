@@ -1,1 +1,1 @@
-{"audits":[],"auditsLen":0}
+{"audits":[{"old_value":false,"new_value":true,"timestamp":"2022-09-27","package_name":"temp-dir","change":"exports_no_require","package_name_id":"temp-dir7d5a5a29c9d54b04ba19b9a25b261965"},{"old_value":false,"new_value":true,"timestamp":"2022-09-27","package_name":"temp-dir","change":"type_module","package_name_id":"temp-diredec0fbf45994e00a2e15b23c561a885"}],"auditsLen":2}
