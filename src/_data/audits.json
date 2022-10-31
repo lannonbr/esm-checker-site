@@ -1,1 +1,1 @@
-{"audits":[],"auditsLen":0}
+{"audits":[{"old_value":false,"new_value":true,"timestamp":"2022-10-31","package_name":"decamelize-keys","change":"exports_no_require","package_name_id":"decamelize-keysa98182f4ed15435687461ed929d1cd41"},{"old_value":false,"new_value":true,"timestamp":"2022-10-31","package_name":"decamelize-keys","change":"type_module","package_name_id":"decamelize-keysc337c6a0da174eb7bc4bbca330406585"}],"auditsLen":2}
