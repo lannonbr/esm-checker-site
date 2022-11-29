@@ -1,1 +1,1 @@
-{"audits":[],"auditsLen":0}
+{"audits":[{"old_value":false,"new_value":true,"timestamp":"2022-11-29","package_name":"eventemitter3","change":"exports_require","package_name_id":"eventemitter36c0d2d7cd5b94ab18e90e55612b27f04"},{"old_value":false,"new_value":true,"timestamp":"2022-11-29","package_name":"fs-extra","change":"exports_no_require","package_name_id":"fs-extrabfa50fbdf6bc4b8aa9080849a5b47789"}],"auditsLen":2}
