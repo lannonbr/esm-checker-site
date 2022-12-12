@@ -215,10 +215,18 @@
       "year_month": "2022-12",
       "type_module": 236,
       "exports_no_require": 306
+    },
+    {
+      "timestamp": "2022-12-12",
+      "total_packages": 2114,
+      "exports_require": 119,
+      "year_month": "2022-12",
+      "type_module": 236,
+      "exports_no_require": 306
     }
   ],
   "dayStats": {
-    "timestamp": "2022-12-11",
+    "timestamp": "2022-12-12",
     "total_packages": 2114,
     "exports_require": 119,
     "year_month": "2022-12",
