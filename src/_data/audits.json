@@ -1,1 +1,1 @@
-{"audits":[],"auditsLen":0}
+{"audits":[{"old_value":false,"new_value":true,"timestamp":"2023-01-09","package_name":"@types/fs-extra","change":"exports_no_require","package_name_id":"@types/fs-extradce9b7b30ffc4fd38ecd9dbeb0b6f7cf"}],"auditsLen":1}
