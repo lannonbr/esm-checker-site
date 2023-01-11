@@ -215,14 +215,22 @@
       "year_month": "2023-01",
       "type_module": 238,
       "exports_no_require": 309
+    },
+    {
+      "timestamp": "2023-01-11",
+      "total_packages": 75,
+      "exports_require": 7,
+      "year_month": "2023-01",
+      "type_module": 6,
+      "exports_no_require": 6
     }
   ],
   "dayStats": {
-    "timestamp": "2023-01-10",
-    "total_packages": 2113,
-    "exports_require": 120,
+    "timestamp": "2023-01-11",
+    "total_packages": 75,
+    "exports_require": 7,
     "year_month": "2023-01",
-    "type_module": 238,
-    "exports_no_require": 309
+    "type_module": 6,
+    "exports_no_require": 6
   }
 }
