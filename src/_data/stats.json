@@ -1,14 +1,6 @@
 {
   "monthStats": [
     {
-      "timestamp": "2022-12-21",
-      "total_packages": 2114,
-      "exports_require": 120,
-      "year_month": "2022-12",
-      "type_module": 238,
-      "exports_no_require": 308
-    },
-    {
       "timestamp": "2022-12-22",
       "total_packages": 2114,
       "exports_require": 120,
