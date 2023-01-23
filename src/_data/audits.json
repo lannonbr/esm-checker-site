@@ -1,1 +1,1 @@
-{"audits":[{"old_value":false,"new_value":true,"timestamp":"2023-01-15","package_name":"minimatch","change":"exports_require","package_name_id":"minimatch9876194f76dd486ebf127da0e9abf949"},{"old_value":false,"new_value":true,"timestamp":"2023-01-17","package_name":"mkdirp","change":"exports_require","package_name_id":"mkdirpdd152cc0b4e34099bc03296c40e8aa4f"}],"auditsLen":2}
+{"audits":[{"old_value":false,"new_value":true,"timestamp":"2023-01-17","package_name":"mkdirp","change":"exports_require","package_name_id":"mkdirpdd152cc0b4e34099bc03296c40e8aa4f"}],"auditsLen":1}
