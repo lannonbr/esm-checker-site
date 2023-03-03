@@ -1,1 +1,1 @@
-{"audits":[{"old_value":false,"new_value":true,"timestamp":"2023-02-23","package_name":"minipass","change":"exports_require","package_name_id":"minipass9b7a77c15b14445fb3665f84ae209808"},{"old_value":false,"new_value":true,"timestamp":"2023-02-28","package_name":"glob","change":"exports_require","package_name_id":"globd67f649b8e0e4aacbdee597636dec44e"}],"auditsLen":2}
+{"audits":[{"old_value":false,"new_value":true,"timestamp":"2023-02-28","package_name":"glob","change":"exports_require","package_name_id":"globd67f649b8e0e4aacbdee597636dec44e"}],"auditsLen":1}
