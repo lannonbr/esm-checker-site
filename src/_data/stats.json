@@ -215,10 +215,18 @@
       "year_month": "2023-03",
       "type_module": 238,
       "exports_no_require": 310
+    },
+    {
+      "timestamp": "2023-03-10",
+      "total_packages": 2114,
+      "exports_require": 127,
+      "year_month": "2023-03",
+      "type_module": 238,
+      "exports_no_require": 310
     }
   ],
   "dayStats": {
-    "timestamp": "2023-03-09",
+    "timestamp": "2023-03-10",
     "total_packages": 2114,
     "exports_require": 127,
     "year_month": "2023-03",
