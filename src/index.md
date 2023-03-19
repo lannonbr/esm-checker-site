@@ -5,7 +5,7 @@ title: ESM Checker - Home
 
 ## NOTICE
 
-The site is no longer being updated and the site is being taken down at the end of March 2023. See post here: [ESM Checker Postmortem](https://lannonbr.com/blog/esm-checker-postmortem/).
+The site is no longer being updated and considered deprecated as of March 2023. See post here on why: [ESM Checker Postmortem](https://lannonbr.com/blog/esm-checker-postmortem/).
 
 This will show the last month of stats on how ES Module adoption is progressing on a day-to-day basis. This keeps track of approximately 2000 popular NPM packages which can be explored in the [Package Listing](/package-listing/) page on this site.
 
